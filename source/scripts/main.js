@@ -99,10 +99,10 @@ function smooth1() {
     if (window.pageYOffset === 0) {
       clearInterval(t1);
     } else if (window.pageYOffset > nowY1 / 2) {
-      speed1 = speed1 * 1.05;
+      speed1 = speed1 * 1.1;
       window.scrollBy(0,-speed1);
     } else {
-      speed1 = speed1 / 1.05;
+      speed1 = speed1 / 1.1;
       window.scrollBy(0,-speed1);
     }
   }
@@ -128,22 +128,22 @@ function smooth2() {
       if (window.pageYOffset > w2 * 0.5825) {
         clearInterval(t2);
       } else if (window.pageYOffset < (w2 * 0.5825 + nowY2)/ 2) {
-        speed2= speed2 * 1.05;
+        speed2= speed2 * 1.1;
         window.scrollBy(0,speed2);
       } else {
-        speed2 = speed2 / 1.05;
+        speed2 = speed2 / 1.1;
         window.scrollBy(0,speed2);
       }
     }
     //bottom part;
     if (nowY2 > w2 * 0.5825) {
-      if (window.pageYOffset < w2 * 0.5825 + w2 * 0.003) {
+      if (window.pageYOffset < w2 * 0.5825 + w2 * 0.007) {
         clearInterval(t2);
       } else if (window.pageYOffset > (w2 * 0.5825 + nowY2)/ 2) {
-        speed2 = speed2 * 1.05;
+        speed2 = speed2 * 1.1;
         window.scrollBy(0,-speed2);
       } else {
-        speed2 = speed2 / 1.05;
+        speed2 = speed2 / 1.1;
         window.scrollBy(0,-speed2);
       }
     }
@@ -170,22 +170,22 @@ function smooth3() {
       if (window.pageYOffset > w3 * 1.0825) {
         clearInterval(t3);
       } else if (window.pageYOffset < (w3 * 1.0825 + nowY3)/ 2) {
-        speed3 = speed3 * 1.05;
+        speed3 = speed3 * 1.1;
         window.scrollBy(0,speed3);
       } else {
-        speed3 = speed3 / 1.05;
+        speed3 = speed3 / 1.1;
         window.scrollBy(0,speed3);
       }
     }
     //bottom part
     if (nowY3 > w3 * 1.0825) {
-      if (window.pageYOffset < w3 * 1.0825 + w3 * 0.003) {
+      if (window.pageYOffset < w3 * 1.0825 + w3 * 0.007) {
         clearInterval(t3);
       } else if (window.pageYOffset > (w3 * 1.0825 + nowY3)/ 2) {
-        speed3 = speed3 * 1.05;
+        speed3 = speed3 * 1.1;
         window.scrollBy(0,-speed3);
       } else {
-        speed3 = speed3 / 1.05;
+        speed3 = speed3 / 1.1;
         window.scrollBy(0,-speed3);
       }
     }

@@ -234,7 +234,7 @@ video {
 .route {
   position: absolute;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   height: 50vw;
@@ -246,7 +246,7 @@ video {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:space-around;
   color: white;
   height: 20vw;
   width: 40%;
