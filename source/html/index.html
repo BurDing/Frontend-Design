@@ -4,12 +4,140 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MP1 Starter</title>
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Travel Advisor</title>
 </head>
 
 <body>
+    <header id="scrollhead">
+        <a id="scrollicon" class="icon">Travel Advisor</a>
+        <a id="scroll1" class="nav1">Intro</a>
+        <a id="scroll2" class="nav2">Advise</a>
+        <a id="scroll3" class="nav3">Route</a>
+    </header>
 
-    <h2>Welcome to MP1!</h2>
+    <div class="intro">
+
+        <video autoplay>
+            <source src="assets/travel.mp4" type="video/mp4">
+        </video>
+
+        <div class="introtext">
+            <h2>What is the Travel Advisor</h2>
+            <p>At TravelAdvisor, we believe in the power of travel — and in helping you make the most of every trip. With over 500 million candid traveler reviews, we can help you make the right choice when you shop for hotels, restaurants, and attractions. You'll also find low airfares, free travel guides, worldwide vacation rental listings, popular forums with advice about virtually every destination, and more. When it’s time to book, we can help you save up to 30% on hotels, checking 200+ sites to find you today’s lowest prices. And when you’re on your trip, our free mobile app is your ultimate travel companion.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Slide Function Reference: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+    <div class="advise">
+
+        <div class="city">
+            <div class="NewYork">New York</div>
+            <div class="NewYorkp">Conquering New York in one visit is impossible. Instead, hit the must-sees – the Empire State Building, the Statue of Liberty, Central Park, the Metropolitan Museum of Art.
+            </div>
+            <img src="https://socialmediaweek.org/newyork/files/2017/01/nyc-2.jpg">
+        </div>
+
+        <div class="city">
+            <div class="Istanbul">Istanbul</div>
+            <div class="Istanbulp">Kick your trip off at the awe-inspiring Sultan Ahmet Camii (Blue Mosque), which is visible from many points of the city. Stroll the Galata Bridge and stop by the Miniaturk Park to see its tiny artifacts.
+            </div>
+            <img src="https://handluggageonly.co.uk/wp-content/uploads/2016/02/What-To-See-In-Istanbul-Turkey-7.jpg">
+        </div>
+
+        <div class="city">
+            <div class="Paris">Paris</div>
+            <div class="Parisp">Lingering over pain au chocolat in a sidewalk café, relaxing after a day of strolling along the Seine and marveling at icons like the Eiffel Tower and the Arc de Triomphe.
+            </div>
+            <img src="https://www.socwall.com/images/wallpapers/49462-1920x1080.jpg">
+        </div>
+
+        <div class="city">
+            <div class="Jerusalem">Jerusalem</div>
+            <div class="Jerusalemp">Religious pilgrims have been traveling to Jerusalem for centuries, yet you don’t have to share their zeal in order to appreciate this city’s profound cultural and historical significance.
+            </div>
+            <img src="http://1.bp.blogspot.com/-qlVDK8nQpng/VkIO_3AB2DI/AAAAAAAA6JI/lOLvGQjUTys/s1600/wailing-wall.jpg">
+        </div>
+
+        <a id="p" class="prev">&#10094;</a>
+        <a id="n" class="next">&#10095;</a>
+
+    </div>
+
+    <div class="route">
+
+        <div id="modal1" class="routepart">
+            <div class="routetext">
+              <h>Italy</h>
+              <p>A European country with a long Mediterranean coastline. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins.</p>
+            </div>
+            <img src="https://i.pinimg.com/originals/6e/dc/d5/6edcd595741cde5ee4035ffd8581ab63.jpg">
+        </div>
+
+        <div id="modal2" class="routepart">
+            <div class="routetext">
+              <h>Egypt</h>
+              <p>Egypt, a country linking northeast Africa with the Middle East, dates to the time of the pharaohs.The capital, Cairo, is home to Ottoman landmarks like Muhammad Ali Mosque.</p>
+            </div>
+            <img src="https://i.pinimg.com/originals/d9/99/5a/d9995a34da66066612daf490e3cfe9d9.jpg">
+        </div>
+
+        <div id="modal3" class="routepart">
+            <div class="routetext">
+              <h>France</h>
+              <p>France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches. Paris, its capital, is famed for its fashion houses.</p>
+            </div>
+            <img src="https://i.pinimg.com/originals/dd/9a/69/dd9a6992674521cc5fa7cac9318ad7db.jpg">
+        </div>
+
+        <div id="modal4" class="routepart">
+            <div class="routetext">
+              <h>USA</h>
+              <p>The U.S. is a country of 50 states covering a vast swath of North America, with Alaska in the northwest and Hawaii extending the nation’s presence into the Pacific Ocean.</p>
+            </div>
+            <img src="https://i.pinimg.com/736x/0a/99/b8/0a99b8128b91ba2077972a2387a3d929.jpg">
+        </div>
+
+    </div>
+
+    <div id="modalid1" class="modal1">
+        <i id="closemodal1" class="fa fa-times" aria-hidden="true"></i>
+        <img src="http://cdn.history.com/sites/2/2014/01/roman-forum-1.jpg">
+    </div>
+
+    <div id="modalid2" class="modal2">
+        <i id="closemodal2" class="fa fa-times" aria-hidden="true"></i>
+        <img src="https://www.amitravel.my/wp-content/uploads/2016/07/Egypt23.jpg">
+    </div>
+
+    <div id="modalid3" class="modal3">
+        <i id="closemodal3" class="fa fa-times" aria-hidden="true"></i>
+        <img src="https://i.pinimg.com/originals/06/f1/61/06f16165345c680c8c20864a88ca99c2.jpg">
+    </div>
+
+    <div id="modalid4" class="modal4">
+        <i id="closemodal4" class="fa fa-times" aria-hidden="true"></i>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Chicago_by_night.jpg">
+    </div>
+
+    <footer>
+
+        <div class="footerp">
+          <p>© 2017 Travel Advisor LLC All rights reserved.</p>
+          <p>Designed by Cheng Ding, University of Illinois at Urbana-Champaign Contact: chengd2@illinois.edu</p>
+        </div>
+
+        <div class="social">
+          <i class="fa fa-tripadvisor" aria-hidden="true"></i>
+          <i class="fa fa-google" aria-hidden="true"></i>
+          <i class="fa fa-amazon" aria-hidden="true"></i>
+          <i class="fa fa-weixin" aria-hidden="true"></i>
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </div>
+
+    </footer>
 
     <script src="bundle.js" type="text/javascript"></script>
 </body>

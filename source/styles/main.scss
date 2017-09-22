@@ -1,0 +1,368 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-image: url("http://ilovehdwallpapers.com/walls/beautiful-icy-mountains-valley--wide.jpg");
+  background-size: 100% 62.5vw;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+//###################################Navigator
+header {
+  top: 0px;
+  z-index: 1000;
+  background-color: white;
+  position: fixed;
+  height: 5vw;
+  width: 100%;
+}
+
+.icon {
+  display: block;
+  height: 4vw;
+  line-height: 4vw;
+  position: absolute;
+  left: 1vw;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: Impact;
+  font-size: 3vw;
+}
+
+.nav {
+  display: block;
+  height: 5vw;
+  width: 7vw;
+  line-height: 5vw;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  font-family: Helvetica;
+  font-size: 2vw;
+}
+
+.nav:hover {
+  cursor: pointer;
+}
+
+.nav1 {
+  @extend .nav;
+  transform: translate(-300% ,-50%);
+}
+
+.nav2 {
+  @extend .nav;
+  transform: translate(-200% ,-50%);
+}
+
+.nav3 {
+  @extend .nav;
+  transform: translate(-100% ,-50%);
+}
+
+//###################################Introduction
+.intro {
+  position: absolute;
+  top: 5vw;
+  height: 56.25vw;
+  width: 100%;
+  text-align: center;
+}
+
+video {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.introtext {
+  position: absolute;
+  height: 40%;
+  width: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  border: solid;
+}
+
+.introtext p {
+  padding-left: 6.28vw;
+  padding-right: 6.28vw;
+  font-size: 1.3vw;
+}
+
+.introtext h2 {
+  font-size: 3vw;
+}
+
+//###################################Advise
+.advise {
+  position: relative;
+  top: 61.25vw;
+  height: 50vw;
+  width: 100%;
+}
+
+.advise img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50vw;
+  width: 100%;
+}
+
+.city {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+//great way to fade by css
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes mymove {
+  from {left: 0;}
+  to {left: 15%;}
+}
+
+@mixin citynameAni {
+  animation-name: mymove;
+  animation-duration: 1s;
+  position: absolute;
+  font-size: 7vw;
+  z-index: 500;
+}
+
+@mixin cityparaAni {
+  animation-name: mymove;
+  animation-duration: 2s;
+  position: absolute;
+  font-size: 1.6vw;
+  height: 15vw;
+  width: 50vw;
+  z-index: 500;
+}
+
+.Paris {
+  @include citynameAni;
+  color: white;
+  left: 15%;
+  top: 45%;
+}
+
+.Parisp {
+  @include cityparaAni;
+  color: white;
+  left: 15%;
+  top: 61%;
+}
+
+.NewYork {
+  @include citynameAni;
+  color: white;
+  left: 15%;
+  top: 45%;
+}
+
+.NewYorkp {
+  @include cityparaAni;
+  color: white;
+  left: 15%;
+  top: 61%;
+}
+
+.Istanbul {
+  @include citynameAni;
+  color: black;
+  left: 15%;
+  top: 10%;
+}
+
+.Istanbulp {
+  @include cityparaAni;
+  color: black;
+  font-size: 1.6vw;
+  top: 26%;
+}
+
+.Jerusalem {
+  @include citynameAni;
+  color: black;
+  left: 15%;
+  top: 48%;
+}
+
+.Jerusalemp {
+  @include cityparaAni;
+  color: black;
+  left: 15%;
+  top: 64%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  color: white;
+  background-color: grey;
+  font-weight: bold;
+  font-size: 3vw;
+  transition: 0.6s ease;
+}
+
+.next {
+  right: 2vw;
+  border-radius: 6px 6px 6px 6px;
+}
+
+.prev {
+  left: 2vw;
+  border-radius: 6px 6px 6px 6px;
+}
+
+.prev:hover, .next:hover {
+  background-color: black;
+}
+
+//###################################Route
+.route {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 50vw;
+  width: 100%;
+  top: 111.25vw;
+}
+
+.routepart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  height: 20vw;
+  width: 40%;
+}
+
+.routepart img {
+  order: 1;
+  height: 22vw;
+  width: 40%;
+  opacity: 0.8;
+}
+
+.routepart img:hover {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.routetext {
+  padding: 1vw 1vw 1vw 1vw;
+  order: 2;
+  height: 20vw;
+  width: 40%;
+  border: solid white 0.01px;
+}
+
+.routetext h {
+  font-size: 4vw;
+}
+
+.routetext p {
+  font-size: 1.4vw;
+}
+//###################################Modal
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 900;
+  background-color: white;
+  opacity: 0.95;
+}
+
+.modal1 {
+  @extend .modal;
+  display: none;
+}
+
+.modal2 {
+  @extend .modal;
+  display: none;
+}
+
+.modal3 {
+  @extend .modal;
+  display: none;
+}
+
+.modal4 {
+  @extend .modal;
+  display: none;
+}
+
+.modal img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50vw;
+  width: 80vw;
+}
+
+.modal i {
+  position: absolute;
+  top: 5vw;
+  right: 5vw;
+  font-size: 5vw;
+  color: grey;
+}
+
+.modal i:hover {
+  color: black;
+  cursor: pointer;
+}
+
+//###################################Footer
+footer {
+  position: absolute;
+  top: 161.25vw;
+  background-color: #696969;
+  height: 10vw;
+  width: 100%;
+}
+
+.footerp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footerp p {
+  font-size: 1vw;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.social i {
+  height: 3vw;
+  width: 3vw;
+  line-height: 3vw;
+  text-align: center;
+  font-size: 2vw;
+}
