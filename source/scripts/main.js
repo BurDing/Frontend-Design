@@ -88,7 +88,7 @@ function smooth1() {
   var t1 = setInterval(smoothscroll1, 10);
   var time1 = setTimeout(function () {
     clearInterval(t1);
-  }, 1200);
+  }, 1300);
   function smoothscroll1() {
     window.onclick = function(event) {
       if (event.target == document.getElementById("scroll2") || event.target == document.getElementById("scroll3")) {
@@ -116,7 +116,7 @@ function smooth2() {
   var t2 = setInterval(smoothscroll2, 10);
   var time2 = setTimeout(function () {
     clearInterval(t2);
-  }, 1200);
+  }, 1300);
   function smoothscroll2() {
     window.onclick = function(event) {
       if (event.target == document.getElementById("scroll3") || event.target == document.getElementById("scroll1")) {
@@ -158,7 +158,7 @@ function smooth3() {
   var t3 = setInterval(smoothscroll3, 10);
   var time3 = setTimeout(function () {
     clearInterval(t3);
-  }, 1200);
+  }, 1300);
   function smoothscroll3() {
     window.onclick = function(event) {
       if (event.target == document.getElementById("scroll2") || event.target == document.getElementById("scroll1")) {
