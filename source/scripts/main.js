@@ -125,7 +125,7 @@ function smooth2() {
     }
     //top part
     if (nowY2 < w2 * 0.5825) {
-      if (window.pageYOffset > w2 * 0.5825 + w2 * 0.007) {
+      if (window.pageYOffset > w2 * 0.5825 + w2 * 0.01) {
         clearInterval(t2);
       } else if (window.pageYOffset < (w2 * 0.5825 + nowY2)/ 2) {
         speed2= speed2 * 1.1;
@@ -137,7 +137,7 @@ function smooth2() {
     }
     //bottom part;
     if (nowY2 > w2 * 0.5825) {
-      if (window.pageYOffset < w2 * 0.5825 + w2 * 0.007) {
+      if (window.pageYOffset < w2 * 0.5825 + w2 * 0.01) {
         clearInterval(t2);
       } else if (window.pageYOffset > (w2 * 0.5825 + nowY2)/ 2) {
         speed2 = speed2 * 1.1;
@@ -167,7 +167,7 @@ function smooth3() {
     }
     //top part
     if (nowY3 < w3 * 1.0825) {
-      if (window.pageYOffset > w3 * 1.0825 + w3 * 0.007) {
+      if (window.pageYOffset > w3 * 1.0825 + w3 * 0.01) {
         clearInterval(t3);
       } else if (window.pageYOffset < (w3 * 1.0825 + nowY3)/ 2) {
         speed3 = speed3 * 1.1;
@@ -179,7 +179,7 @@ function smooth3() {
     }
     //bottom part
     if (nowY3 > w3 * 1.0825) {
-      if (window.pageYOffset < w3 * 1.0825 + w3 * 0.007) {
+      if (window.pageYOffset < w3 * 1.0825 + w3 * 0.01) {
         clearInterval(t3);
       } else if (window.pageYOffset > (w3 * 1.0825 + nowY3)/ 2) {
         speed3 = speed3 * 1.1;
