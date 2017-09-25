@@ -88,7 +88,7 @@ function smooth1() {
   var t1 = setInterval(smoothscroll1, 10);
   var time1 = setTimeout(function () {
     clearInterval(t1);
-  }, 1300);
+  }, 1200);
   function smoothscroll1() {
     window.onclick = function(event) {
       if (event.target == document.getElementById("scroll2") || event.target == document.getElementById("scroll3")) {
@@ -116,7 +116,7 @@ function smooth2() {
   var t2 = setInterval(smoothscroll2, 10);
   var time2 = setTimeout(function () {
     clearInterval(t2);
-  }, 1300);
+  }, 1200);
   function smoothscroll2() {
     window.onclick = function(event) {
       if (event.target == document.getElementById("scroll3") || event.target == document.getElementById("scroll1")) {
@@ -125,7 +125,7 @@ function smooth2() {
     }
     //top part
     if (nowY2 < w2 * 0.5825) {
-      if (window.pageYOffset > w2 * 0.5825) {
+      if (window.pageYOffset > w2 * 0.5825 + w2 * 0.007) {
         clearInterval(t2);
       } else if (window.pageYOffset < (w2 * 0.5825 + nowY2)/ 2) {
         speed2= speed2 * 1.1;
@@ -158,7 +158,7 @@ function smooth3() {
   var t3 = setInterval(smoothscroll3, 10);
   var time3 = setTimeout(function () {
     clearInterval(t3);
-  }, 1300);
+  }, 1200);
   function smoothscroll3() {
     window.onclick = function(event) {
       if (event.target == document.getElementById("scroll2") || event.target == document.getElementById("scroll1")) {
@@ -167,7 +167,7 @@ function smooth3() {
     }
     //top part
     if (nowY3 < w3 * 1.0825) {
-      if (window.pageYOffset > w3 * 1.0825) {
+      if (window.pageYOffset > w3 * 1.0825 + w3 * 0.007) {
         clearInterval(t3);
       } else if (window.pageYOffset < (w3 * 1.0825 + nowY3)/ 2) {
         speed3 = speed3 * 1.1;
