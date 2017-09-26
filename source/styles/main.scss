@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-image: url("http://ilovehdwallpapers.com/walls/beautiful-icy-mountains-valley--wide.jpg");
+  background-image: url("http://static1.1.sqspcdn.com/static/f/1083989/23775980/1382966932317/Grand-Canyon-HD-Wallpaper-Nature.jpg?token=Qmq9%2BiFz7zPCYXPloG3teWcATco%3D");
   background-size: 100% 62.5vw;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -68,7 +68,7 @@ header {
   top: 5vw;
   height: 56.25vw;
   width: 100%;
-  text-align: center;
+  background-color: black;
 }
 
 video {
@@ -76,6 +76,7 @@ video {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+  opacity: 0.7;
 }
 
 .introtext {
@@ -85,6 +86,8 @@ video {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
   overflow: auto;
   border: solid;
 }
@@ -92,7 +95,7 @@ video {
 .introtext p {
   padding-left: 6.28vw;
   padding-right: 6.28vw;
-  font-size: 1.3vw;
+  font-size: 1.5vw;
 }
 
 .introtext h2 {
@@ -105,6 +108,7 @@ video {
   top: 61.25vw;
   height: 50vw;
   width: 100%;
+  background: white;
 }
 
 .advise img {
