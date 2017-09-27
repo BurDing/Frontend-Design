@@ -32,19 +32,26 @@ document.getElementById("scroll1").style.background = "grey";
 
 function scroll() {
     var w = window.innerWidth;
+    var h = window.innerHeight;
 
-    if (document.body.scrollTop < w * 0.5825 && document.body.scrollTop >= 0) {
-        document.getElementById("scroll1").style.background = "grey";
-        document.getElementById("scroll2").style.background = "white";
-        document.getElementById("scroll3").style.background = "white";
-    } else if (document.body.scrollTop > w * 0.5825 && document.body.scrollTop < w * 1.0825) {
-        document.getElementById("scroll1").style.background = "white";
-        document.getElementById("scroll2").style.background = "grey";
-        document.getElementById("scroll3").style.background = "white";
+    if (document.body.scrollTop + h > w * 1.6125) {
+      document.getElementById("scroll1").style.background = "white";
+      document.getElementById("scroll2").style.background = "white";
+      document.getElementById("scroll3").style.background = "grey";
     } else {
-        document.getElementById("scroll1").style.background = "white";
-        document.getElementById("scroll2").style.background = "white";
-        document.getElementById("scroll3").style.background = "grey";
+      if (document.body.scrollTop < w * 0.5825 && document.body.scrollTop >= 0) {
+          document.getElementById("scroll1").style.background = "grey";
+          document.getElementById("scroll2").style.background = "white";
+          document.getElementById("scroll3").style.background = "white";
+      } else if (document.body.scrollTop > w * 0.5825 && document.body.scrollTop < w * 1.0825) {
+          document.getElementById("scroll1").style.background = "white";
+          document.getElementById("scroll2").style.background = "grey";
+          document.getElementById("scroll3").style.background = "white";
+      } else {
+          document.getElementById("scroll1").style.background = "white";
+          document.getElementById("scroll2").style.background = "white";
+          document.getElementById("scroll3").style.background = "grey";
+      }
     }
 
     if (document.body.scrollTop >= w * 0.05) {
